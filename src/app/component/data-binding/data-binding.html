@@ -1,0 +1,68 @@
+<div class="luxury-wrapper">
+  <div class="luxury-container">
+    <h2 class="main-heading">Data Binding Dashboard</h2>
+
+    <div class="grid-layout">
+      <!-- 1. Interpolation Section (Left) -->
+      <div class="form-section">
+        <h3 class="section-title">Interpolation</h3>
+        <p class="text-desc">Course Name is <span class="highlight">{{courseName}}</span></p>
+        
+        <div class="image-container">
+          <img src="{{imgUrl}}" alt="Course Image">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Your Favourite Course</label>
+          <div class="checkbox-wrapper">
+            <input type="{{inputType}}" name="favCourse" value="{{courseName}}">
+            <span>{{courseName}}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Property Binding Section (Right) -->
+      <div class="form-section">
+        <h3 class="section-title">Property Binding</h3>
+
+        <div class="image-container">
+          <img [src]="imgUrl" alt="Course Image">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Select Mode:</label>
+          <div class="options-row">
+            <label class="radio-label">
+              <input [type]="inputType" name="mode" value="online">
+              <span>Online</span>
+            </label>
+            <label class="radio-label">
+              <input [type]="inputType" name="mode" value="onsite">
+              <span>Onsite</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Event Binding & Two Way Binding Section (Bottom) -->
+    <div class="bottom-grid">
+      <div class="form-section">
+        <h3 class="section-title">Event Binding</h3>
+        <div class="button-row">
+          <button class="btn luxury-btn-primary" (click)="sayHello('Ammad')">Click Here</button>
+          <button class="btn luxury-btn-outline" (click)="changeCourse('React')">Change Course</button>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3 class="section-title">Two way Data Binding</h3>
+        <div class="field-group">
+          <label class="field-label">Course Name</label>
+          <input type="text" class="luxury-input" [(ngModel)]="courseName" placeholder="Enter course name...">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

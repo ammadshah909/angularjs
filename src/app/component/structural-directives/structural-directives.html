@@ -1,0 +1,99 @@
+<!-- <div id="div1" *ngIf="isDiv1Visible" class="content-box">
+  <h3>Div 1</h3>
+  <p>Welcome! This is Div 1 content.</p>
+</div>
+
+<div class="button-container">
+  <button class="btn btn-show" (click)="showDiv1()">
+    Show
+  </button>
+
+  <button class="btn btn-hide" (click)="hidediv1()">
+    Hide
+  </button>
+
+
+<br><br>
+ <br><br>
+
+<label>
+  Enter Number 1
+  <input type="text" [(ngModel)]="num1">
+</label><br>
+
+<label>
+  Enter Number 2
+  <input type="text" [(ngModel)]="num2">
+</label><br>
+
+<div class="div2" *ngIf="num1 > num2">
+  {{num1}} is greater than {{num2}}
+</div>
+
+<div class="div2" *ngIf="num1 <= num2">
+  {{num1}} is lesser than or equals to {{num2}}
+</div>
+
+<p *ngFor="let city of cities">The city is {{city}}</p>
+
+<ul>
+  <li *ngFor="let city of cities">{{city}}</li>
+</ul>
+</div> -->
+
+<div class="directives-wrapper">
+  <div class="directives-container">
+
+    <!-- Div 1 Box -->
+    <div id="div1" *ngIf="isDiv1Visible" class="content-box">
+      <h3>Div 1</h3>
+      <p>Welcome! This is Div 1 content.</p>
+    </div>
+
+    <div class="button-container">
+      <!-- Show & Hide Buttons -->
+      <div class="btn-group">
+        <button class="btn btn-show" (click)="showDiv1()">Show</button>
+        <button class="btn btn-hide" (click)="hidediv1()">Hide</button>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 15px 0;">
+
+      <!-- Number Inputs -->
+      <label class="input-label-group">
+        Enter Number 1
+        <input type="text" [(ngModel)]="num1" placeholder="Enter number...">
+      </label>
+
+      <label class="input-label-group">
+        Enter Number 2
+        <input type="text" [(ngModel)]="num2" placeholder="Enter number...">
+      </label>
+
+      <!-- Conditions -->
+      <div class="div2" *ngIf="num1 > num2">
+        {{num1}} is greater than {{num2}}
+      </div>
+
+      <div class="div2" *ngIf="num1 <= num2">
+        {{num1}} is lesser than or equals to {{num2}}
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 10px 0;">
+
+      <!-- Paragraph Loop -->
+      <div>
+        <p class="city-item-p" *ngFor="let city of cities">The city is <strong>{{city}}</strong></p>
+      </div>
+
+      <!-- Bullet List Loop -->
+      <div class="city-list-box">
+        <ul>
+          <li *ngFor="let city of cities">{{city}}</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>

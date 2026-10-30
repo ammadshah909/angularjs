@@ -1,0 +1,108 @@
+/* Page Background with Premium Gradient */
+.students-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main Luxury Card Container */
+.students-card {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 850px;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading with Modern Gradient Text */
+.table-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ultra-Clean Luxury Table */
+.luxury-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Rows ke beech mein spacing */
+}
+
+.luxury-table th {
+  background: transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 18px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Table Rows as Floating Cards */
+.luxury-table tbody tr {
+  background: #f8fafc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.luxury-table tbody tr:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.08);
+}
+
+/* Rounded corners for row cards */
+.luxury-table tbody tr td:first-child,
+.luxury-table tbody tr th:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.luxury-table tbody tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.luxury-table th, 
+.luxury-table td {
+  padding: 16px 18px;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* Enhanced Status Badges */
+.badge {
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-active {
+  background-color: #dcfce7;
+  color: #16a34a;
+  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.15);
+}
+
+.badge-inactive {
+  background-color: #fee2e2;
+  color: #dc2626;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.15);
+}

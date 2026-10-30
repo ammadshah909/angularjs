@@ -1,0 +1,27 @@
+<div class="students-wrapper">
+  <div class="students-card">
+    <h3 class="table-title">Students Directory</h3>
+    
+    <table class="luxury-table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Student Name</th>
+          <th scope="col">Student City</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of studentsList">
+          <th scope="row">{{student.student_id}}</th>
+          <td><strong>{{student.student_name}}</strong></td>
+          <td>{{student.student_city}}</td>
+          <td>
+            <span *ngIf="student.isActive" class="badge badge-active">Active</span>
+            <span *ngIf="!student.isActive" class="badge badge-inactive">Not Active</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
